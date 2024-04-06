@@ -79,8 +79,26 @@ public class Movie {
         this.boxOfficeGain = boxOfficeGain;
     }
 
+    public Movie(String movieName, String directorName, String genre, String studio, int year, float boxOfficeGain) {
+        this.id = 0;
+        this.movieName = movieName;
+        this.directorName = directorName;
+        this.genre = genre;
+        this.studio = studio;
+        this.year = year;
+        this.boxOfficeGain = boxOfficeGain;
+    }
+
     public int getId() {
         return id;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public void setId(int id) {
